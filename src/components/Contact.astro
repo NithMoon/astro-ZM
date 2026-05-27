@@ -1,0 +1,45 @@
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Déjanos tus datos y te responderemos a la brevedad.</p>
+    
+    <form id="formulario-contacto">
+        <div>
+            <label>
+                Nombre completo
+                <input type="text" name="user_name" placeholder="Ej. Juan Pérez" required>
+            </label>
+
+            <label>
+                Celular
+                <input type="tel" name="user_cel" placeholder="55-30-68-XX-XX" required>
+            </label>
+        </div>
+
+        <div>
+            <label for="modelo">Selecciona tu modelo</label>
+            <select id="modelo" name="modelo" required>
+                <option value="">-- Por favor, elige una opción --</option>
+                <option value="360">Xbox 360</option>
+                <option value="series-s">Xbox Series S</option>
+                <option value="series-x">Xbox Series X</option>
+            </select>
+        </div>   
+
+        <div>
+            <p>¿Qué servicio desea?</p>
+            <input type="radio" id="opcion-reparacion" name="opcion" value="reparación" required>
+            <label for="opcion-reparacion">Reparación</label>
+
+            <input type="radio" id="opcion-mantenimiento" name="opcion" value="mantenimiento">
+            <label for="opcion-mantenimiento">Mantenimiento</label>
+        </div>
+
+        <label>
+            Mensaje
+            <textarea name="message" placeholder="¿En qué te podemos ayudar?" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" id="btn-enviar">Enviar Mensaje</button>
+    </form>
+</section>
