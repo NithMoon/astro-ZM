@@ -1,22 +1,175 @@
-+
-<section id="servicios">
-    <h2>Ofrecemos</h2>
+---
+import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
+---
+<section id="servicios" class="py-20 bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+        
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-2">
+                Nuestros Servicios
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-md mx-auto text-sm sm:text-base">
+                Elige el nivel de protección y cuidado que necesita tu consola.
+            </p>
+        </div>
 
-    <div>
-        <div>Icono</div>
-        <h3>Mantenimiento</h3>
-        <p>Hacemos reparación preventiva</p>
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-16">
+            
+            <div class="flex gap-3 p-4 rounded-xl border border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-400">
+                <span class="text-xl shrink-0">🪳</span>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wide mb-1">Aviso Importante</h4>
+                    <p class="text-xs sm:text-sm leading-relaxed">
+                        Si la consola presenta infestación de insectos o plagas, se aplicará un **cobro extra** obligatorio por concepto de sanitización y riesgo de contaminación de herramientas.
+                    </p>
+                </div>
+            </div>
 
-    <div>
-        <div>Icono</div>
-        <h3>Reparación</h3>
-        <p>Solucionamos fallas de hardware y software</p>
-    </div>
+            <div class="flex gap-3 p-4 rounded-xl border border-green-200 bg-green-50 text-green-900 dark:border-green-900/30 dark:bg-green-950/20 dark:text-green-400">
+                <span class="text-xl shrink-0">🧟‍♂️</span>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wide mb-1">Zona de Entrega</h4>
+                    <p class="text-xs sm:text-sm leading-relaxed">
+                        Toma en cuenta que nuestro zombie repartidor **va a pie** (y no se mueve muy rápido que digamos). Consulta la cobertura de recolección local antes de agendar CDMX.
+                    </p>
+                </div>
+            </div>
 
-    <div>
-        <div>Icono</div>
-        <h3>Garantía</h3>
-        <p>Todos nuestros trabajos están garantizados</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="flex flex-col p-6 rounded-2xl bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-800 shadow-sm transition-all duration-300 hover:shadow-md hover:border-green-500/50 dark:hover:border-green-500/50">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300 text-2xl mb-4 font-bold">
+                    <Wind class="w-6 h-6 text-gray-700 dark:text-red-500"/>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Preventivo Express</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Adiós al polvo superficial.</p>
+                </div>
+
+                <div class="mt-2 grow">
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Limpieza de Ventilador</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Remoción de polvo en rejillas</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Optimización de flujo de aire</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto pt-6 flex items-baseline justify-between">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
+                        Costo del servicio
+                    </span>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
+                        <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
+                            120
+                        </span>
+                        <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                            MXN
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-6 rounded-2xl bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-800 shadow-sm transition-all duration-300 hover:shadow-md hover:border-green-500/50 dark:hover:border-green-500/50">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300 text-2xl mb-4 font-bold">
+                    <Sparkles class="w-6 h-6 text-gray-700 dark:text-red-500" />
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Limpieza Profunda</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Desarmado y lavado estético.</p>
+                </div>
+
+                <div class="mt-2 grow">
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Desarmado completo de piezas</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Lavado de carcasas</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Limpieza de placa (sin pasta)</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto pt-6 flex items-baseline justify-between">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
+                        Costo del servicio
+                    </span>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
+                        <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
+                            200
+                        </span>
+                        <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                            MXN
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col p-6 rounded-2xl bg-white border-2 border-green-500 dark:bg-gray-900 shadow-md transition-all duration-300 relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-xl">Recomendado</span>
+                
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-green-100 text-green-700 dark:bg-green-950/50 dark:text-green-400 text-2xl mb-4 font-bold">
+                    <Flame class="w-6 h-6 text-gray-700 dark:text-red-500" />
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Mantenimiento Full</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Rendimiento máximo y refrigeración.</p>
+                </div>
+
+                <div class="mt-2 grow">
+                    <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Limpieza profunda</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Cambio de pasta térmica premium</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Limpieza de disipador de calor</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto pt-6 flex items-baseline justify-between">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
+                        Costo del servicio
+                    </span>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
+                        <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
+                            300
+                        </span>
+                        <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
+                            MXN
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>

@@ -1,13 +1,80 @@
-<header>
-    <div>
-        <img src="/public/img/logo.png" alt="Logo de la empresa">
-        <h1>Zombie Mitosis</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+<header class="relative z-50">
+    <nav class="fixed top-0 left-0 right-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200
+                 dark:border-gray-800 transition-colors duration-300">
+        
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between relative">
+            
+            <div class="flex items-center gap-3">
+                <img src="/public/img/logo.png" class="h-10 w-auto" alt="Logo de la empresa">
+                <h1 class="text-xl font-bold tracking-wider text-gray-900 dark:text-green-400 whitespace-nowrap">
+                    Zombie Mitosis
+                </h1>
+            </div>
+
+            <div class="hidden md:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center">
+                <ul class="flex flex-row space-x-8 font-semibold text-sm">
+                    <li>
+                        <a href="#inicio" class="text-green-600 dark:text-green-400 border-b-2 border-green-500 pb-1">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servicios" class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors pb-1">
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors pb-1">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button id="theme-toogle" 
+                        class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg
+                               bg-gray-100 hover:bg-gray-200 text-gray-800
+                               dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200
+                               border border-gray-300 dark:border-gray-700
+                               transition-all duration-200 active:scale-95">
+                    🕶️ Cambiar tema
+                </button>
+
+                <button id="menu-toggle" 
+                        aria-label="Abrir menú"
+                        class="flex md:hidden flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-lg
+                               bg-gray-100 hover:bg-gray-200 text-gray-800
+                               dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200
+                               border border-gray-300 dark:border-gray-700
+                               transition-all duration-200 active:scale-95">
+                    <span class="w-5 h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all"></span>
+                    <span class="w-5 h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all"></span>
+                    <span class="w-5 h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" 
+             class="hidden md:hidden absolute top-16 left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-xl transition-all">
+            <ul class="flex flex-col p-4 space-y-4 font-semibold text-base">
+                <li>
+                    <a href="#inicio" class="block py-2 px-3 text-green-600 dark:text-green-400 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios" class="block py-2 px-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="block py-2 px-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                        Contacto
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </div>
+        </div>
+
+    </nav>
 </header>
