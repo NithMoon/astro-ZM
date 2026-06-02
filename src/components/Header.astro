@@ -1,3 +1,6 @@
+---
+import {Sun,Moon} from 'lucide-astro';
+---
 <header class="relative z-50">
     <nav class="fixed top-0 left-0 right-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200
                  dark:border-gray-800 transition-colors duration-300">
@@ -38,7 +41,8 @@
                                dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200
                                border border-gray-300 dark:border-gray-700
                                transition-all duration-200 active:scale-95">
-                    🕶️ Cambiar tema
+                    <Sun class="hidden dark:inline"/>
+                    <Moon class="inline dark:hidden"/>
                 </button>
 
                 <button id="menu-toggle" 
@@ -78,3 +82,27 @@
 
     </nav>
 </header>
+<script>
+    // Esperamos a que todo el HTML de la página esté cargado
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log("El DOM está completamente cargado y listo.");
+
+        const themeToggleBtn = document.getElementById("theme-toogle");
+        const mobileMenuBtn = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            
+            document.documentElement.classList.toggle("dark");
+        });
+        }
+
+        if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+            
+            mobileMenu.classList.toggle("hidden");
+        });
+        }
+    });
+</script>

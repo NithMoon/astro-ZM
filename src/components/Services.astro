@@ -39,29 +39,36 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <div class="flex flex-col p-6 rounded-2xl bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-800 shadow-sm transition-all duration-300 hover:shadow-md hover:border-green-500/50 dark:hover:border-green-500/50">
+            <div class="flex flex-col p-6 rounded-2xl bg-white border-2 border-green-500 dark:bg-gray-900 shadow-md transition-all duration-300 relative overflow-hidden">
+
+                <span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-xl">Recomendado</span>
+
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300 text-2xl mb-4 font-bold">
                     <Wind class="w-6 h-6 text-gray-700 dark:text-red-500"/>
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Preventivo Express</h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Adiós al polvo superficial.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Mantenimiento Preventivo</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Evitar el sobrecalentamiento, reducir el ruido y prolongar la vida útil de la consola.</p>
                 </div>
 
                 <div class="mt-2 grow">
                     <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Limpieza de Ventilador</span> 
+                            <span class="text-green-700 dark:text-white">Desamble Completo</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Remoción de polvo en rejillas</span> 
+                            <span class="text-green-700 dark:text-white">Limpieza Profunda</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Optimización de flujo de aire</span> 
+                            <span class="text-green-700 dark:text-white">Cambio de Compuestos Termicos</span> 
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Pruebas de Estres</span> 
                         </li>
                     </ul>
                 </div>
@@ -73,7 +80,7 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
                     <div class="flex items-baseline gap-1">
                         <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
                         <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                            120
+                            300-350
                         </span>
                         <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
                             MXN
@@ -88,23 +95,27 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Limpieza Profunda</h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Desarmado y lavado estético.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Mantenimiento Correctivo</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Se aplica cuando la consola ya presenta fallas de encendido, video, lectura o rendimiento.</p>
                 </div>
 
                 <div class="mt-2 grow">
                     <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Desarmado completo de piezas</span> 
+                            <span class="text-green-700 dark:text-white">Reparación de consolas que no encienden</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Lavado de carcasas</span> 
+                            <span class="text-green-700 dark:text-white">Reparación de fallas de video / HDMI</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Limpieza de placa (sin pasta)</span> 
+                            <span class="text-green-700 dark:text-white">Reparación de fuente de poder</span> 
+                        </li> 
+                        <li class="flex items-start gap-2">
+                            <Brain class=" text-pink-500" />
+                            <span class="text-green-700 dark:text-white">Problemas de actualización</span> 
                         </li>
                     </ul>
                 </div>
@@ -116,7 +127,7 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
                     <div class="flex items-baseline gap-1">
                         <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
                         <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                            200
+                            600-1,500
                         </span>
                         <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
                             MXN
@@ -125,31 +136,31 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
                 </div>
             </div>
 
-            <div class="flex flex-col p-6 rounded-2xl bg-white border-2 border-green-500 dark:bg-gray-900 shadow-md transition-all duration-300 relative overflow-hidden">
-                <span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-xl">Recomendado</span>
+            <div class="flex flex-col p-6 rounded-2xl bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-800 shadow-sm transition-all duration-300 hover:shadow-md hover:border-green-500/50 dark:hover:border-green-500/50">
+                
                 
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center bg-green-100 text-green-700 dark:bg-green-950/50 dark:text-green-400 text-2xl mb-4 font-bold">
                     <Flame class="w-6 h-6 text-gray-700 dark:text-red-500" />
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Mantenimiento Full</h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Rendimiento máximo y refrigeración.</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Mantenimiento a Mandos</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Rendimiento máximo.</p>
                 </div>
 
                 <div class="mt-2 grow">
                     <ul class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300">
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Limpieza profunda</span> 
+                            <span class="text-green-700 dark:text-white">Cambio de Joystick</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Cambio de pasta térmica premium</span> 
+                            <span class="text-green-700 dark:text-white">Reparación de gatillos</span> 
                         </li>
                         <li class="flex items-start gap-2">
                             <Brain class=" text-pink-500" />
-                            <span class="text-green-700 dark:text-white">Limpieza de disipador de calor</span> 
+                            <span class="text-green-700 dark:text-white">Puerto de carga</span> 
                         </li>
                     </ul>
                 </div>
@@ -161,7 +172,7 @@ import {Wind, Sparkles, Flame, Brain} from 'lucide-astro';
                     <div class="flex items-baseline gap-1">
                         <span class="text-xl font-bold text-green-600 dark:text-green-400">$</span>
                         <span class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                            300
+                            200-500
                         </span>
                         <span class="text-xs font-medium text-gray-500 dark:text-gray-400">
                             MXN
